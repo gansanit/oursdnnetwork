@@ -6,18 +6,14 @@
 extends controller_layout
 
 block content
-  h1!= title
-
-  h2
-    a(href='https://zerotier.com' target='_blank') ZeroTier 
-    | network controller UI
+  h1 Gansan SDN Network
 
   h3 Network controller details
 
   if error
      b #{error}
   else
-    h4 This network controller has a ZeroTier address of <b>#{zt_address}</b>
+    h4 This network controller has an address of <b>#{zt_address}</b>
 
     h4
       a(href='/controller/networks') List all networks on this network controller
